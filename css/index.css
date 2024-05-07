@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "corsiva";
+    src: url("../fonts/Corsiva.woff2") format("woff2");
+}
+@font-face {
+    font-family: "roman";
+    src: url("../fonts/TimesNewRomanMTStd-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "arial";
+    src: url("../fonts/ArialMT.woff") format("woff2");
+}
+
+
+.certificate{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    position: relative;
+    max-height: 600px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.content img{
+    object-fit: cover;
+    width: 100%;
+}
+.name{
+    font-family: "corsiva";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 50px;
+    color: #bf873a;
+    width: 100%;
+    text-align: center;
+}
+.course{
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-family: "roman";
+    font-size: 24.5px;
+    color: #363435;
+    width: 100%;
+    text-align: center;
+}
+.desc{
+    font-family: "arial";
+    font-size: 12.5px;
+    text-align: center;
+    position: absolute;
+    bottom: 13%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #025f54;
+    text-align: left
+}
+@media only screen and (max-width:600px){
+    .name{
+        font-size: 40px;
+    }
+    .course{
+        font-size: 20px;
+    }
+    .desc{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:480px){
+    .name{
+        font-size: 30px;
+    }
+    .course{
+        font-size: 15px;
+    }
+    .desc{
+        font-size: 7px;
+    }
+}
+@media only screen and (max-width:380px){
+    .name{
+        font-size: 20px;
+    }
+    .course{
+        font-size: 12px;
+    }
+    .desc{
+        font-size: 5px;
+    }
+}
