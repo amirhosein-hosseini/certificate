@@ -20,13 +20,51 @@
 }
 .content{
     position: relative;
-    max-height: 600px;
-    max-width: 850px;
+    height: 80vh;
+    width: 100%;
     margin: 0 auto;
+    border-top: 100px solid #00685a;
+    border-bottom: 100px solid #00685a;
 }
-.content img{
+.certificateLogo{
+    position: absolute;
+    bottom: -103px;
+    left: 50%;
+    transform: translate(-50%,0);
+    max-width: 600px;
+    overflow: hidden;
+}
+.certificateLogo img{
     object-fit: cover;
     width: 100%;
+}
+.contentWrapper{
+    position: relative;
+    width: 95%;
+    height: 115%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid #fdb92e;
+}
+.header{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "roman";
+    color: #373435;
+}
+.header .title{
+    font-size: 55px;
+}
+.header .description{
+    font-size: 18px;
 }
 .name{
     font-family: "corsiva";
@@ -38,6 +76,17 @@
     color: #bf873a;
     width: 100%;
     text-align: center;
+}
+.courseTitle{
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-family: "roman";
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    color: #373435;
 }
 .course{
     position: absolute;
@@ -64,6 +113,15 @@
     text-align: left
 }
 @media only screen and (max-width:600px){
+    .header .title{
+        font-size: 45px;
+    }
+    .header .description{
+        font-size: 14px;
+    }
+    .courseTitle{
+        font-size: 14px;
+    }
     .name{
         font-size: 40px;
     }
@@ -72,6 +130,12 @@
     }
     .desc{
         font-size: 10px;
+    }
+    .contentWrapper{
+        width: 90%;
+    }
+    .certificateLogo{
+        min-width: 350px;
     }
 }
 @media only screen and (max-width:480px){
