@@ -112,6 +112,14 @@
     color: #025f54;
     text-align: left
 }
+.manager{
+    position: absolute;
+    font-family: "roman";
+    bottom: 13%;
+    right: 20%;
+    font-size: 14px;
+    color: #373435;
+}
 @media only screen and (max-width:600px){
     .header .title{
         font-size: 45px;
@@ -137,6 +145,9 @@
     .certificateLogo{
         min-width: 350px;
     }
+    .manager{
+        right: 15%;
+    }
 }
 @media only screen and (max-width:480px){
     .name{
@@ -147,6 +158,10 @@
     }
     .desc{
         font-size: 7px;
+    }
+    .manager{
+        right: 5%;
+        font-size: 12px;
     }
 }
 @media only screen and (max-width:380px){
