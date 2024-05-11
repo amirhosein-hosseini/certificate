@@ -119,6 +119,29 @@
     right: 20%;
     font-size: 14px;
     color: #373435;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.manager .image{
+    max-width: 300px;
+    overflow: hidden;
+}
+.manager .image img{
+    object-fit: cover;
+    width: 100%;
+}
+@media only screen and (max-width:1450px){
+    .manager .image{
+        max-width: 200px;
+    }
+}
+@media only screen and (max-width:768px){
+    .manager .image{
+        max-width: 100px;
+    }
 }
 @media only screen and (max-width:600px){
     .header .title{
